@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "recomposer"
 include(":app")
+include(":recomposer")
