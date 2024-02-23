@@ -44,6 +44,8 @@ dependencies {
     implementation(libs.core.ktx)
     implementation(libs.appcompat)
     implementation(libs.material)
+    implementation(libs.ui)
+    implementation(platform(libs.compose.bom))
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

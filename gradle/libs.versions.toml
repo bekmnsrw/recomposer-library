@@ -15,7 +15,7 @@ target-sdk = "34"
 jvm-target = "17"
 kotlin-compiler-extension = "1.5.10"
 appcompat = "1.6.1"
-material = "1.9.0"
+material = "1.11.0"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
