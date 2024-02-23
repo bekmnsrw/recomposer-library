@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.kotlinAndroid)
+    id("maven-publish")
 }
 
 android {
@@ -50,4 +51,18 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.bekmnsrw"
+            artifactId = "recomposer"
+            version = "1.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
