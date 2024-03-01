@@ -1,4 +1,4 @@
-package com.bekmnsrw.recomposer
+package com.bekmnsrw.recomposer.core
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -7,8 +7,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSITION_COUNTER_INIT_VALUE
 
-private class RecompositionCounter(var counter: Int)
+private class RecompositionCounter(var counter: Long)
 private class Ref<T>(var value: T)
 
 @Composable
@@ -32,7 +33,7 @@ private inline fun RecompositionCountLogger(
         RecomposerConfig.logger.invoke(tag, message)
     }
 ) {
-    val recompositionCounter = remember { RecompositionCounter(counter = 0) }
+    val recompositionCounter = remember { RecompositionCounter(counter = RECOMPOSITION_COUNTER_INIT_VALUE) }
 
     logger(
         RecomposerConfig.tag,
@@ -57,7 +58,7 @@ private fun RecompositionReasonLogger(
         )
     }
 
-    val recompositionCounter = remember { RecompositionCounter(counter = 0) }
+    val recompositionCounter = remember { RecompositionCounter(counter = RECOMPOSITION_COUNTER_INIT_VALUE) }
     val recompositionFlag = remember { Ref(value = false) }
 
     SideEffect { recompositionCounter.counter++ }
@@ -87,7 +88,7 @@ private fun RecompositionReasonLogger(
             "'$composableName' recomposed because $changeLog"
         )
 
-        recompositionCounter.counter >= 1 && !recompositionFlag.value -> logger(
+        recompositionCounter.counter >= 1L && !recompositionFlag.value -> logger(
             RecomposerConfig.tag,
             "'$composableName' recomposed, but reason is unknown.\n" +
                     "Are you sure you added all params to `trackingComposableArguments`?"

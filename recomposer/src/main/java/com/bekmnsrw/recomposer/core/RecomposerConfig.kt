@@ -1,10 +1,11 @@
-package com.bekmnsrw.recomposer
+package com.bekmnsrw.recomposer.core
 
 import android.util.Log
+import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSER
 
 object RecomposerConfig {
 
-    private const val DEFAULT_LOGCAT_TAG = "Recomposer"
+    private const val DEFAULT_LOGCAT_TAG = RECOMPOSER
 
     var tag: String = DEFAULT_LOGCAT_TAG
     var logger: (tag: String, message: String) -> Unit = ::defaultLogger

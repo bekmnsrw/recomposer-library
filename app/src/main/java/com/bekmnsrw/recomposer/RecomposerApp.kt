@@ -2,6 +2,7 @@ package com.bekmnsrw.recomposer
 
 import android.app.Application
 import android.util.Log
+import com.bekmnsrw.recomposer.core.RecomposerConfig
 
 class RecomposerApp : Application() {
     override fun onCreate() {
