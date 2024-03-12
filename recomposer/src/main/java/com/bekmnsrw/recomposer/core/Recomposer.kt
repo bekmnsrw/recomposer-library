@@ -7,7 +7,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSITION_COUNTER_INIT_VALUE
+import com.bekmnsrw.recomposer.RecomposerConstants.RECOMPOSITION_COUNTER_INIT_VALUE
 
 private class RecompositionCounter(var counter: Long)
 private class Ref<T>(var value: T)

@@ -1,4 +1,4 @@
-package com.bekmnsrw.recomposer.utils
+package com.bekmnsrw.recomposer
 
 object RecomposerConstants {
 

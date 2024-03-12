@@ -1,7 +1,7 @@
 package com.bekmnsrw.recomposer.core
 
 import android.util.Log
-import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSER
+import com.bekmnsrw.recomposer.RecomposerConstants.RECOMPOSER
 
 object RecomposerConfig {
 

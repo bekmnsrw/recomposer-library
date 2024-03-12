@@ -47,10 +47,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.ui)
     implementation(platform(libs.compose.bom))
-
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.test.ext.junit)
-    androidTestImplementation(libs.espresso.core)
 }
 
 publishing {
