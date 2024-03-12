@@ -19,4 +19,6 @@ object RecomposerConfig {
     }
 }
 
-internal fun defaultLogger(tag: String, message: String) { Log.d(tag, message) }
+internal fun defaultLogger(tag: String, message: String) {
+    Log.d(tag, message)
+}
