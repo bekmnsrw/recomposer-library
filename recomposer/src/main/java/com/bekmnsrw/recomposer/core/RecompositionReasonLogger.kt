@@ -7,9 +7,9 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
-import com.bekmnsrw.recomposer.RecomposerConstants
 import com.bekmnsrw.recomposer.core.model.RecompositionCounter
 import com.bekmnsrw.recomposer.core.model.Ref
+import com.bekmnsrw.recomposer.utils.RecomposerConstants
 
 @Composable
 internal fun RecompositionReasonLogger(

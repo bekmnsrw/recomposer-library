@@ -47,6 +47,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.ui)
     implementation(platform(libs.compose.bom))
+    implementation(kotlin("reflect"))
 }
 
 publishing {

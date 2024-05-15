@@ -46,7 +46,7 @@ fun RecomposerSample() {
 }
 
 @Composable
-fun RecomposerSampleContent(
+private fun RecomposerSampleContent(
     cat: Cat,
     dog: Dog
 ) {

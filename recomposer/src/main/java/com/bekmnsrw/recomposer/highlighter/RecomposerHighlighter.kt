@@ -15,9 +15,9 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.platform.debugInspectorInfo
 import androidx.compose.ui.unit.dp
-import com.bekmnsrw.recomposer.RecomposerConstants.RECOMPOSER_HIGHLIGHTER
-import com.bekmnsrw.recomposer.RecomposerConstants.RECOMPOSER_HIGHLIGHTER_DELAY
-import com.bekmnsrw.recomposer.RecomposerConstants.RECOMPOSITION_COUNTER_INIT_VALUE
+import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSER_HIGHLIGHTER
+import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSER_HIGHLIGHTER_DELAY
+import com.bekmnsrw.recomposer.utils.RecomposerConstants.RECOMPOSITION_COUNTER_INIT_VALUE
 import kotlinx.coroutines.delay
 import kotlin.math.min
 
